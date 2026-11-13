@@ -1,0 +1,69 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261112225934
+Nombre de usuario: JULIETA\Julie
+Usuario RunAs: JULIETA\Julie
+Nombre de la configuración: 
+Máquina: JULIETA (Microsoft Windows NT 10.0.22631.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 26860
+PSVersion: 5.1.22621.6133
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6133
+BuildVersion: 10.0.22621.6133
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Julie\Desktop\auditoria_completa.txt
+PS C:\Users\Julie> cd $HOME\Desktop
+PS C:\Users\Julie\Desktop> mkdir Sistema_Ventas
+
+
+    Directorio: C:\Users\Julie\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     23:00                Sistema_Ventas
+
+
+PS C:\Users\Julie\Desktop> cd Sistema_Ventas
+PS C:\Users\Julie\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\Julie\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     23:00                Frontend
+d-----        12/11/2026     23:00                Backend
+d-----        12/11/2026     23:00                BaseDatos
+
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git init
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git branch -M main
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git remote add origin https://github.com/Julieta446/Sistema-Ventas.git
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git status
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git log --oneline
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git remote set-url origin https://github.com/Julieta446/Sistema-Ventas..git
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git remote -v
+
+PS C:\Users\Julie\Desktop\Sistema_Ventas> git push -u origin main
+
